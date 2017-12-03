@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-inappcamera",
+        "scope": null,
+        "escapedName": "cordova-plugin-inappcamera",
+        "name": "cordova-plugin-inappcamera",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "c:\\projects\\FishMate"
+    ]
+  ],
+  "_from": "cordova-plugin-inappcamera@latest",
+  "_id": "cordova-plugin-inappcamera@1.0.8",
+  "_inCache": true,
+  "_location": "/cordova-plugin-inappcamera",
+  "_nodeVersion": "4.4.4",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-inappcamera-1.0.8.tgz_1488307635730_0.5516296674031764"
+  },
+  "_npmUser": {
+    "name": "jesusbaqui",
+    "email": "jesusbaqui@gmail.com"
+  },
+  "_npmVersion": "2.15.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-inappcamera",
+    "scope": null,
+    "escapedName": "cordova-plugin-inappcamera",
+    "name": "cordova-plugin-inappcamera",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-inappcamera/-/cordova-plugin-inappcamera-1.0.8.tgz",
+  "_shasum": "eeb4e788cd4d794cb718e06c198aee754eca497c",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-inappcamera",
+  "_where": "c:\\projects\\FishMate",
+  "author": {
+    "name": "jesusbaqui",
+    "email": "jesusbaqui.xyz"
+  },
+  "bugs": {
+    "url": "https://github.com/jesusbaqui/cordova-plugin-inappcamera/issues"
+  },
+  "dependencies": {},
+  "description": "Native Camera in custom activity",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "eeb4e788cd4d794cb718e06c198aee754eca497c",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-inappcamera/-/cordova-plugin-inappcamera-1.0.8.tgz"
+  },
+  "gitHead": "91dfe6faa2524c3df1bd9dfbd4a583d2e9b589a7",
+  "homepage": "https://github.com/jesusbaqui/cordova-plugin-inappcamera#readme",
+  "keywords": [
+    "custom",
+    "camera",
+    "activity",
+    "plugin",
+    "native"
+  ],
+  "license": "ISC",
+  "main": "plugin.xml",
+  "maintainers": [
+    {
+      "name": "jesusbaqui",
+      "email": "jesusbaqui@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-inappcamera",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusbaqui/cordova-plugin-inappcamera.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}

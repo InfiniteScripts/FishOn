@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Fish",
+  "short_name": "Fish",
+  "version": "com.phonegap.fishmate",
+  "description": "Fishing Companion",
+  "author": "Kevin Greene",
+  "icons": [],
+  "start_url": "index.html"
+}

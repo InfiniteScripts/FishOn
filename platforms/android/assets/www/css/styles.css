@@ -13,3 +13,67 @@
 .statusbar-overlay {
     background: #000000;
 }
+.hidden{
+	display:none;
+}
+#map{
+	width:100%;
+	height:100%;
+  z-index:20;
+  position:relative;
+}
+
+#catch-holder{
+  padding-top:5%;
+  position:absolute;
+  z-index:110000;
+  top:7%;
+  left:0;
+  height:93%;
+  width:100%;
+  
+  padding-left:5%;
+  background-color:#fff;
+  
+}
+
+#close-catch{
+  position:absolute;
+ 
+  top:5%;
+  right:10%;
+  z-index:110001;
+}
+
+#view-catch{
+  padding-top:5%;
+  position:absolute;
+  z-index:110000;
+  top:7%;
+  left:0;
+  height:93%;
+  width:100%;
+  
+  padding-left:5%;
+  background-color:#fff;
+}
+#close-view-catch{
+  position:absolute;
+ 
+  top:5%;
+  right:10%;
+  z-index:110001;
+}
+.content-block{
+  z-index:10000;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}

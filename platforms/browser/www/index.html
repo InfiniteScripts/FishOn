@@ -15,13 +15,14 @@
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Your app title -->
-    <title>Fish On</title>
+    <title>FishSnap</title>
 
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
@@ -30,10 +31,7 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
     <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
 
-    <script src="//dmc1acwvwny3.cloudfront.net/atatus.js"> </script>
-    <script type="text/javascript"> atatus.config('376fcf1be5ea4501a966267ed2afd256').install(); </script>
-
-    <script src="js/functions.js"> </script>
+   
 
 
     <link rel="stylesheet" href="css/styles.css">
@@ -48,7 +46,10 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <p>Left panel content goes here</p>
+            <p>Recent Trips</p>
+                <ul id="list"></ul>
+
+            <p>View all trips</p>
         </div>
     </div>
 
@@ -60,7 +61,7 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Fish On</div>
+                    <div class="center sliding">FishSnap</div>
                     <div class="right">
                         <!--
                           Right link contains only icon - additional "icon-only" class
@@ -71,33 +72,81 @@
                 </div>
             </div>
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-            <div class="pages navbar-through toolbar-through">
+            <div  class="pages navbar-through toolbar-through">
+                <div ></div>
                 <!-- Page, "data-page" contains page name -->
                 <div data-page="index" class="page">
                     <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <div class="content-block">
-                            <p>Welcome!</p>
-                            <!-- Link to another page -->
-                            <a href="trip.html">Start a Trip</a>
+                    <div  class="page-content">
+                    	<div id="map"></div>
+                        <div id="button-block" class="content-block">
+                            
+                            
+                           
                         </div>
+                        <div id="catch-holder" class="hidden">
+                        	<div id="close-catch">X</div>	
+                        <form action=""  id="add-catch-form">
+                            <img src="" id="catch-image"/>
+                            <button id="add-catch-image" class="button">Add Image</button>
+                            <div data-role="fieldcontain">
+                                <input type="text" name="type" id="type" placeholder="Type of Fish ">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <input type="text" name="lure" id="lure" placeholder="Lure / Bait ">
+                            </div>
+                            <div data-role="fieldcontain">
+                                <input type="text" name="notes" id="notes" placeholder="Notes ">
+                            </div>
+                            
+                        </form>
+                        <button class="button" id="record-catch-button">Add Catch</button>
+                        <button class="button" id="fb-share">Share on Facebook</button>
+                        <button class="button" id="twitter-share">Share on Twitter</button>
+                        <button class="button" id="inst-share">Share on Instagram</button>
                     </div>
-                </div>
+                    </div>
+                    <div class="hidden" id="view-catch">
+                    	<div id="close-view-catch">X</div>	
+                    	<img src="" id="view-catch-image"/>
+                    	<div class="catch-data" id="catch-type"></div>
+                    	<div class="catch-data" id="catch-lure"></div>
+                    	<div class="catch-data" id="catch-notes"></div>
+                    	<button class="button" id="fb-share">Share on Facebook</button>
+                        <button class="button" id="twitter-share">Share on Twitter</button>
+                        <button class="button" id="inst-share">Share on Instagram</button>
+                    </div>
             </div>
-            <!-- Bottom Toolbar-->
+     </div>
+     
+            <!-- Bottom Toolbar -->
             <div class="toolbar">
                 <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
+                            <button id="start-trip" class="button">Start</button>
+                            <button id="resume-trip" class="button hidden">Resume</button>
+                            <button id="end-trip" class="button hidden">End</button> 
+                            <button id="record-catch" class="button hidden">Catch</button>
+                <h1 id="trip-title"></h1>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
-
+    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+
+
+
+ 
+    
+   
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-8Z8FY7yDtISk78z03a-iC-PsHaErJYg" async defer></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+
+
+
+
 </body>
 
 </html>

@@ -9,9 +9,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAY9X-qu3yVWAycq1oKDzsafOAjOKatvro" />
+        <activity android:label="nativecameraplugin" android:name="cordova.plugin.inappcamera.CameraActivity" android:screenOrientation="portrait" android:theme="@style/Theme.InAppTheme" />
+        <activity android:label="previewwindow" android:name="cordova.plugin.inappcamera.PreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.InAppTheme" />
     </application>
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-feature android:name="android.hardware.location" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 </manifest>

@@ -1,30 +1,44 @@
 {
-    "name": "com.phonegap.fishmate",
-    "version": "1.0.0",
-    "displayName": "FishMate",
-    "cordova": {
-        "platforms": [
-            "android",
-            "ios"
-        ],
-        "plugins": {
-            "cordova-plugin-console": {},
-            "cordova-plugin-statusbar": {},
-            "cordova-plugin-whitelist": {},
-            "cordova-sqlite-storage": {},
-            "cordova-plugin-geolocation": {
-                "GEOLOCATION_USAGE_DESCRIPTION": " "
-            }
-        }
-    },
-    "dependencies": {
-        "cordova-android": "~6.2.3",
-        "cordova-ios": "~4.4.0",
-        "cordova-plugin-compat": "^1.0.0",
-        "cordova-plugin-console": "~1.0.1",
-        "cordova-plugin-geolocation": "^2.4.3",
-        "cordova-plugin-statusbar": "~1.0.1",
-        "cordova-plugin-whitelist": "~1.2.0",
-        "cordova-sqlite-storage": "^2.0.4"
+  "name": "com.phonegap.fishmate",
+  "version": "1.0.0",
+  "displayName": "FishMate",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {
+        "API_KEY_FOR_ANDROID": "AIzaSyAY9X-qu3yVWAycq1oKDzsafOAjOKatvro",
+        "API_KEY_FOR_IOS": "AIzaSyBLWjU5FcnEoKeubkR01vx0VVLwMPi7o-k",
+        "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
+        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map"
+      },
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-geolocation": {
+        "GEOLOCATION_USAGE_DESCRIPTION": " "
+      },
+      "cordova-plugin-googlemaps": {},
+      "com.google.playservices": {},
+      "cordova-plugin-compat": {},
+      "cordova-plugin-inappcamera": {}
     }
+  },
+  "dependencies": {
+    "com.google.playservices": "^22.0.0",
+    "cordova-android": "^6.3.0",
+    "cordova-ios": "^4.5.3",
+    "cordova-plugin-compat": "^1.1.0",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-geolocation": "git+https://github.com/InfiniteScripts/cordova-plugin-wezka-nativecamera.git",
+    "cordova-plugin-googlemaps": "^2.1.1",
+    "cordova-plugin-googlemaps-sdk": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk.git",
+    "cordova-plugin-inappcamera": "^1.0.8",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-wezka-nativecamera": "git+https://github.com/InfiniteScripts/cordova-plugin-wezka-nativecamera.git",
+    "cordova-plugin-whitelist": "~1.2.0",
+    "cordova-sqlite-storage": "^2.0.4"
+  }
 }

@@ -21,8 +21,10 @@ apply plugin: 'com.android.application'
 
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 
     // Switch the Android Gradle plugin version requirement depending on the
@@ -37,8 +39,10 @@ buildscript {
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
     repositories {
-        mavenCentral();
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }
 
@@ -249,6 +253,16 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     debugCompile(project(path: "CordovaLib", configuration: "debug"))
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
+    debugCompile(project(path: "com.google.playservices:google-play-services_lib", configuration: "debug")){
+        exclude module:("CordovaLib")
+    }
+    releaseCompile(project(path: "com.google.playservices:google-play-services_lib", configuration: "release")){
+        exclude module:("CordovaLib")
+    }
+    compile "com.google.android.gms:play-services-maps:+"
+    compile "com.google.android.gms:play-services-location:+"
+    compile "com.github.bumptech.glide:glide:3.7.0"
+    compile "com.android.support:support-v4:19.1.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 

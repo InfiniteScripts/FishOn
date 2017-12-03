@@ -1,32 +1,47 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "com.google.playservices": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
     },
-    "installed_plugins": {
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        },
-        "cordova-plugin-geolocation": {
-            "GEOLOCATION_USAGE_DESCRIPTION": " ",
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        }
+    "cordova-plugin-geolocation": {
+      "GEOLOCATION_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "com.phonegap.fishmate"
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.phonegap.fishmate"
-        }
+    "cordova-plugin-googlemaps": {
+      "API_KEY_FOR_IOS": "AIzaSyBLWjU5FcnEoKeubkR01vx0VVLwMPi7o-k",
+      "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
+      "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map",
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    },
+    "cordova-plugin-inappcamera": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
     }
+  },
+  "dependent_plugins": {
+    "com.googlemaps.ios": {
+      "PACKAGE_NAME": "com.phonegap.fishmate"
+    }
+  }
 }

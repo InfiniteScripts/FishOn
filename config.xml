@@ -5,7 +5,7 @@
         Fishing Companion
     </description>
     <author email="kevin@infinitescripts.com" href="http://www.infinitescripts.com">
-        Kevin GReene
+        Kevin Greene
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -25,7 +25,22 @@
         <preference name="BackupWebStorage" value="none" />
     </platform>
     <preference name="DisallowOverscroll" value="true" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <engine name="android" spec="^6.3.0" />
+    <engine name="ios" spec="^4.5.3" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyAY9X-qu3yVWAycq1oKDzsafOAjOKatvro" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyBLWjU5FcnEoKeubkR01vx0VVLwMPi7o-k" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
+    </plugin>
+    <plugin name="cordova-sqlite-storage" spec="^2.0.4" />
+    <plugin name="cordova-plugin-geolocation" spec="git+https://github.com/InfiniteScripts/cordova-plugin-wezka-nativecamera.git">
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="^2.1.1" />
+    <plugin name="com.google.playservices" spec="^22.0.0" />
+    <plugin name="cordova-plugin-compat" spec="^1.1.0" />
+    <plugin name="cordova-plugin-inappcamera" spec="^1.0.8" />
 </widget>
